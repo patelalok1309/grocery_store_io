@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fruit Products</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_header.css">
+    <link rel="stylesheet" href="style_home.css">
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+    <script src="script2.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-shopping-basket"></i> Grocery </a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html#feature">Features</a>
+            <a href="products.html">Products</a>
+            <a href="review1.html">Reviews</a>
+            <a href="about.html">About Us</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <a href="cart.html">
+                <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            </a>
+            <div class="fas fa-user" id="login-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+        <form action="" class="search-form">
+            <input type="search" name="" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <form action="" class="login-form">
+            <h3>Login now</h3>
+            <input type="email" placeholder="Enter Email-id" class="box">
+            <input type="password" placeholder="Enter Password" class="box">
+            <p>Forget Password <a href="#">Click here</a></p>
+            <p>Don't have Account <a href="#">Sign Up</a></p>
+            <input type="submit" value="Login" class="btn">
+        </form>
+
+    </header>
+    <section class=" products" id="product">
+        <h2 id="fru">Fruits</h2>
+        <div class="box-container">
+            <div class="box card" data-id="F101" data-name="Banana " data-price="60" data-image="Fruits/banana.png">
+                <img src="Fruits/banana.png" alt="" width="180px" height="130px">
+                <h1>Banana</h1>
+                <div class="price">60/- (per kg)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="F102" data-name="Apple" data-price="150" data-image="Fruits/apple.png">
+                <img src="Fruits/apple.png" alt="" width="160px" height="130px">
+                <h1>Fresh Apple</h1>
+                <div class="price">150/- (per kg)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-empty"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="F103" data-name="Grapes" data-price="100" data-image="Fruits/grapes.png">
+                <img src="Fruits/grapes.png" width="180px" height="130px" alt="">
+                <h1>Fresh Grapes</h1>
+                <div class="price">100/- (per kg)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="F104" data-name="Kiwi" data-price="40" data-image="Fruits/kiwi.png">
+                <img src="Fruits/kiwi.png" alt="" width="180px" height="130px">
+                <h1>Kiwi</h1>
+                <div class="price">40/- (per piece)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="F105" data-name="Orange" data-price="80" data-image="Fruits/orange.png">
+                <img src="Fruits/orange.png" alt="" width="180px" height="130px">
+                <h1>Orange</h1>
+                <div class="price">80/- (per kg)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="F106" data-name="Black Grapes" data-price="93" data-image="Fruits/blackgrapes.png">
+                <img src="Fruits/blackgrapes.png" alt="" width="180px" height="130px">
+                <h1>Black Grapes</h1>
+                <div class="price">93/- (500 gm)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="F107" data-name="Pineapple" data-price="100" data-image="Fruits/pineapple.png">
+                <img src="Fruits/pineapple.png" alt="" width="180px" height="130px">
+                <h1>Pineapple</h1>
+                <div class="price">100/- (per kg)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="F108" data-name="Apple Ber" data-price="60" data-image="Fruits/AppleBer.png">
+                <img src="Fruits/AppleBer.png" alt="" width="180px" height="130px">
+                <h1>Apple Ber</h1>
+                <div class="price">60/- (500 gm)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="F109" data-name="Dragon Fruit" data-price="130" data-image="Fruits/dragon.png">
+                <img src="Fruits/dragon.png" alt="" width="180px" height="130px">
+                <h1>Dragon Fruit</h1>
+                <div class="price">130/- (500 gm)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="F110" data-name="Coconut"data-price="40" data-image="Fruits/coconut.png">
+                <img src="Fruits/coconut.png" alt="" width="180px" height="130px">
+                <h1>Coconut</h1>
+                <div class="price">40/- (per piece)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="F111" data-name="Pomegranate" data-price="190" data-image="Fruits/Pomegranate.png">
+                <img src="Fruits/Pomegranate.png" alt="" width="180px" height="130px">
+                <h1>Pomegranate</h1>
+                <div class="price">190/- (per kg)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="F112" data-name="Pear" data-price="250" data-image="Fruits/Pear.png">
+                <img src="Fruits/Pear.png" alt="" width="180px" height="130px">
+                <h1>Pear</h1>
+                <div class="price">250/- (500 gm)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="F113" data-name="Watermelon" data-price="62" data-image="Fruits/watermelon.png">
+                <img src="Fruits/watermelon.png" alt="" width="180px" height="130px">
+                <h1>Watermelon</h1>
+                <div class="price">62/- (2 kg)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="F114" data-name="Guava" data-price="65" data-image="Fruits/guava.png">
+                <img src="Fruits/guava.png" alt="" width="180px" height="130px">
+                <h1>Guava</h1>
+                <div class="price">65/- (500 gm)</div>
+                <div class="starts">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+        </div>
+    </section>
+    <script src="cart.js"></script>
+       <!-- Footer section start -->
+       <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3> Grocery <i class="fa fa-shopping-basket"></i></h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis doloribus aut odit ad repellendus
+                    necessitatibus.</p>
+                <div class="share">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3> Contact Info</h3>
+                <a href="#" class="links"> <i class="fa fa-phone"></i>+919876542530</a>
+                <a href="#" class="links"> <i class="fa fa-phone"></i>+919876542531</a>
+                <a href="#" class="links"> <i class="fa fa-envelope"></i>grocery@gmail.com</a>
+                <a href="#" class="links"> <i class="fa fa-map-marker"></i>Gujarat , India</a>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="index.html" class="links"> <i class="fa fa-arrow-right"></i>Home</a>
+                <a href="index.html#feature" class="links"> <i class="fa fa-arrow-right"></i>Features</a>
+                <a href="products.html" class="links"> <i class="fa fa-arrow-right"></i>Products</a>
+                <a href="review1.html" class="links"> <i class="fa fa-arrow-right"></i>Reviews</a>
+                <a href="about.html" class="links"> <i class="fa fa-arrow-right"></i>About Us</a>
+            </div>
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Subscribe For more update</p>
+                <input type="email" name="" id="" class="email" placeholder="Enter your Email..">
+                <div class="sub">
+                    <input type="submit" value="Subscribe" class="btn3 b1">
+                </div>
+
+            </div>
+        </div>
+        <div class="credit">Created By <span>Yash Prajapati</span> </div>
+    </section>
+</body>
+</html>

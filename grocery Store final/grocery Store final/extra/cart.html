@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Grocery Shop - Cart</title>
+    <!-- <link rel="stylesheet" href="style.css" -->
+    <style>
+        /* Define styles for the cart page */
+        .cart {
+            margin: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .total {
+            margin-top: 20px;
+            text-align: right;
+        }
+
+        #clear-cart {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #clear-cart:hover {
+            background-color: #ff4d4d;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Grocery Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="add2.html">Home</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="cart">
+            <h2>Cart</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                </tbody>
+            </table>
+            <div class="total">
+                <h3>Total: $<span id="cart-total"></span></h3>
+                <button id="clear-cart">Clear Cart</button>
+            </div>
+        </section>
+    </main>
+    <script>
+        // Get the cart items from local storage
+        let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+        // Select the table body to append the cart items to
+        let cartTableBody = document.getElementById("cart-items");
+
+        // Loop through the cart items and add them to the table
+        cartItems.forEach(item => {
+            // Create a new row for each item
+            let row = document.createElement("tr");
+
+            // Add the item name, price, quantity and total to the row
+            row.innerHTML = `
+    <td>${item.name}</td>
+    <td>$${item.price.toFixed(2)}</td>
+    <td>${item.quantity}</td>
+    <td>$${(item.price * item.quantity).toFixed(2)}</td>
+  `;
+
+            // Add the row to the table body
+            cartTableBody.appendChild(row);
+        });
+        const cartTableBod = document.querySelector('#cart-table tbody');
+        console.log("Body=" + cartTableBod)
+        // Display cart items on cart page
+        if (cartTableBod) {
+            // Clear cart table body
+            cartTableBod.innerHTML = '';
+
+            // Loop through cart items and add them to the table
+            let cartTotal = 0;
+            cartItems.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+                cartTotal += itemTotal;
+                const row = `
+      <tr>
+        <td><img src="${item.image}" alt="${item.name}" width="100"></td>
+        <td>${item.name}</td>
+        <td>$${item.price.toFixed(2)}</td>
+        <td>${item.quantity}</td>
+        <td>$${itemTotal.toFixed(2)}</td>
+      </tr>
+    `;
+                cartTableBod.innerHTML += row;
+            });
+
+            // Add cart total to the table
+            const totalRow = `
+    <tr>
+      <td colspan="4" style="text-align: right;"><strong>Total:</strong></td>
+      <td>$${cartTotal.toFixed(2)}</td>
+    </tr>
+  `;
+            cartTableBody.innerHTML += totalRow;
+}
+    </script>
+</body>
+
+</html>

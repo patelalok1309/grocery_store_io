@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grocery Shop</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .cart {
+            background-color: #f9a825;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .cart a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product h2 {
+            margin: 10px 0;
+        }
+
+        .product p {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .add-to-cart {
+            background-color: #f9a825;
+            padding: 2rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Grocery Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <a href="#">Cart</a>
+            <span>0</span>
+        </div>
+    </header>
+
+    <section class="products">
+        <div class="product">
+            <!-- <img src="GROCERY STORE/Fruits/apple.png"> -->
+            <h2>Product 1</h2>
+            <p>Price: $10.00</p>
+            <button class="add-to-cart" data-id="1"> Add to Car t</button>
+        </div>
+
+        <div class="product">
+            <!-- <img src="product2.jpg"> -->
+            <h2>Product 2</h2>
+            <p>Price: $15.00</p>
+            <button class="add-to-cart" data-id="2">Add to Cart </button>
+        </div>
+
+        <div class="product">
+            <!-- <img src="product3.jpg"> -->
+            <h2>Product 3</h2>
+            <p>Price: $20.00</p>
+            <button class="add-to-cart" data-id="3">Add to Cart </button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Grocery Shop</p>
+    </footer>
+    <script>
+        // Select all "add-to-cart" buttons
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+        console.log(addToCartButtons)
+        // Select the cart count span
+        const cartCountSpan = document.querySelector('.cart span');
+
+        // Initialize cart count
+        let cartCount = 0;
+
+        // Add event listener to each "add-to-cart" button
+        addToCartButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                // Get the product ID from the button's "data-id" attribute
+                const productId = button.getAttribute('data-id');
+                console.log(productId)
+
+                // Increment the cart count
+                cartCount++;
+
+                // Update the cart count span
+                cartCountSpan.textContent = cartCount;
+
+                // Save the product ID to localStorage
+                localStorage.setItem(`product-${cartCount}`, productId);
+                console.log(`LocalStorage=${localStorage}`)
+            });
+        });
+
+    </script>
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>

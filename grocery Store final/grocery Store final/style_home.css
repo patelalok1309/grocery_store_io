@@ -1,0 +1,417 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Peralta&family=Playfair+Display&family=Shantell+Sans:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Peralta&family=Playfair+Display&family=Shantell+Sans:wght@300&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+:root {
+    --orange: #ff7800;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --outline: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.btn1 {
+    margin-top: 1rem;
+    display: inline-block;
+    width: 190px;
+    margin-left: .3rem;
+    padding: 0.8rem 0rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .07rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.btn1:hover {
+    background-color: var(--orange);
+    color: #eee;
+}
+
+.btn2 {
+    display: inline-block;
+    width: 155px;
+    /* margin-left: 62.3rem; */
+    margin-top: 55px;
+    padding: 0.8rem 0rem;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    border: 0.07rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+    height: 60px;
+}
+.btn2:hover {
+    background-color: var(--orange);
+    color: #eee;
+}
+.btn2>a:hover{
+    background-color: var(--orange);
+    color: #eee;
+}
+.btn3 {
+    display: inline-block;
+    width: 195px;
+    /* margin-left: 62.3rem; */
+    margin-top: 12px;
+    padding: 0.8rem 0rem;
+    font-size: 40px;
+    border-radius: 0.5rem;
+    border: 0.07rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+    height: 73.6px;
+}
+.btn3:hover {
+    background-color: var(--orange);
+    color: #eee;
+}
+.btn3>a:hover{
+    background-color: var(--orange);
+    color: #eee;
+}
+
+#feature {
+    padding: 2rem 9%;
+    /* position: fixed; */
+    /* top: 20px; */
+    /* left: 0px; */
+
+}
+
+/* Back-to-top css start */
+#top1 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+}
+
+/* Back-to-top css end */
+/* .home{  
+    margin-top: 4rem;
+    display: flex;
+    border: 0px solid;
+    background: url("images/banner2.JPG") no-repeat;
+    background-position: center;
+    background-size: 100% 600px;
+    padding: 17rem 0 10rem 0 ;
+
+
+}
+.home .content{
+    text-align: center;
+    margin-left: 47rem;
+}
+.home .content h3{
+    color:var(--black);
+    font-size: 3rem;
+}
+.home .content p{
+    font-size: 2rem;
+    line-height: 1.5;
+    padding: 1rem 0;
+} */
+
+
+/* banner Css start*/
+#demo{
+    margin-top: 6rem;
+}
+.banner .content {
+    margin-top: 8.2rem;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .content .text {
+    border: 0px solid;
+    display: inline-block;
+    position: absolute;
+    top: 12rem;
+    right: 16rem;
+    text-align: center;
+}
+
+.banner .content .text h3 {
+    font-size: 3rem;
+}
+
+.banner .content .text p {
+    font-size: 1.5rem;
+}
+
+/* banner Css End*/
+
+.heading {
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.heading span {
+    background: var(--orange);
+    color: #eee;
+    display: inline-block;
+    padding: .5rem 1.5rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+.feature .box-container {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.feature .box-container .box {
+    width: 390px;
+    border: 0px solid;
+    padding: 1rem 2rem;
+    outline: rgb(249, 0, 42);
+    outline-offset: -2rem;
+    text-align: center;
+    /* flex: 30%; */
+    margin-left: 1rem;
+    margin-top: 1rem;
+    background-color: aliceblue;
+    box-shadow: var(--box-shadow)
+        /* margin: .5rem; */
+}
+
+.feature .box-container .box:hover {
+    box-shadow: 50px 50px 50px 50px solid rgb(60, 0, 255);
+    /* border: 2px solid; */
+}
+
+.feature .box-container .box img {
+    height: 15rem;
+}
+
+.feature .box-container .box h3 {
+    font-size: 2.1rem;
+    margin-top: 10px;
+}
+
+.feature .box-container .box p {
+    font-size: 1.4rem;
+    color: rgba(37, 35, 35, 0.46);
+}
+
+/* Slider Css Start */
+/* .products{
+    margin-top: 6rem;
+
+}
+.products .product-slider{
+
+    padding: 1rem;
+}
+.products .product-slider:first-child{
+    margin-bottom: 2rem;
+}
+.products .product-slider .box{
+    background: white;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--orange);
+    box-shadow: var(--box-shadow);
+    transition: .2s linear;
+}
+.products .product-slider .box:hover{
+    box-shadow: 30px 30px 30px 30px solid var(--orange) ;
+}
+.products .product-slider .box h1{
+    font-size: 2.5rem;
+}
+.products .product-slider .box .price{
+    font-size: 2rem;
+    padding: .5rem 0;
+}
+.products .product-slider .box .starts i{
+    font-size: 1.5rem;
+    color: orange;
+    padding: .5rem 0;
+} */
+
+/* Slider Css End */
+
+
+/* Product css Start*/
+.products {
+    padding: 2rem 3rem;
+    margin-top: 7rem;
+    /* flex-wrap: wrap; */
+}
+
+.products .box-container {
+    display: flex;
+    /* width: 1440px; */
+    /* flex-direction: row; */
+    border: 0px solid;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+}
+.products .more {
+    display: flex;
+    justify-content:space-between;
+}
+.products .box-parent{
+    font-size: 15px;
+}
+/* .products .more button{
+    width: 150px;
+    height: 55px;
+} */
+.products h2 {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    margin-top: 40px;
+    height: 60px;
+}
+
+.products .box-container .box {
+    border: 1px solid;
+    border-radius: .5rem;
+    width: 250px;
+
+    padding-left: 0rem;
+    padding-bottom: .8rem;
+
+    text-align: center;
+    justify-content: center;
+
+    margin-left: 1rem;
+    margin-top: 1rem;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.products .box-container .box:hover {
+    /* border: 5px dotted blueviolet; */
+    box-shadow: 0px 5px 10px 5px rgb(186, 189, 152);
+
+}
+
+.products .box-container .box .starts {
+    color: orange;
+}
+
+.category ul {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    border: .1rem solid green;
+    border-radius: .5rem;
+
+}
+
+.category ul a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Product css End */
+
+/* Footer Css */
+.footer {
+    background-color: #fff;
+}
+
+.footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer .box-container .box {
+    width: 330px;
+
+    /* flex: 25%; */
+}
+
+.footer .box-container .box h3 {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box h3 i {
+    color: var(--orange);
+}
+
+.footer .box-container .box .links {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .links i {
+    color: var(--orange);
+    padding-right: .8rem;
+}
+
+.footer .box-container .box .links:hover i {
+    padding-right: 2rem;
+}
+
+.footer .box-container .box p {
+    line-height: 1.6;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+}
+
+.footer .box-container .box .share a {
+    height: 4rem;
+    line-height: 4rem;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    width: 4rem;
+    color: var(--black);
+    margin-left: .2rem;
+    text-align: center;
+    background: #eee;
+}
+
+.footer .box-container .box .email {
+    margin: .7rem 0;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    text-transform: none;
+    color: var(--black);
+    width: 100%;
+}
+
+.footer .box-container .box .sub {
+    text-align: center;
+}
+
+.footer .credit {
+    border-top: var(--border);
+    border-color: black;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+/* Footer Css */

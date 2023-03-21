@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<h3><a href="products.html">Products</a></h3>
+<body>
+    <table rules="all" border="2" cellpadding="15px">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody id="cart-items">
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Subtotal:</td>
+                <td id="subtotal"></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+    <script>
+        function displayCartItems() {
+            let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+
+            let cartTable = document.getElementById("cart-items");
+            let subtotal = 0;
+
+            cartTable.innerHTML = "";
+
+            for (let i = 0; i < cartItems.length; i++) {
+                let cartItem = cartItems[i];
+                let total = cartItem.price * cartItem.quantity;
+                subtotal += total;
+
+                let row = cartTable.insertRow();
+                let imageCell = row.insertCell();
+                let nameCell = row.insertCell();
+                let priceCell = row.insertCell();
+                let quantityCell = row.insertCell();
+                let totalCell = row.insertCell();
+                let removeCell = row.insertCell();
+
+                let image = document.createElement("img");
+                image.src = cartItem.image;
+                image.alt = cartItem.name;
+                imageCell.appendChild(image);
+
+                nameCell.textContent = cartItem.name;
+                priceCell.textContent = cartItem.price;
+                quantityCell.textContent = cartItem.quantity;
+                totalCell.textContent = total.toFixed(2);
+
+                let removeButton = document.createElement("button");
+                removeButton.textContent = "Remove";
+                removeButton.dataset.id = cartItem.id;
+                removeButton.addEventListener("click", removeCartItem);
+                removeCell.appendChild(removeButton);
+            }
+
+            document.getElementById("subtotal").textContent = subtotal.toFixed(2);
+        }
+
+    </script>
+</body>
+
+</html>
