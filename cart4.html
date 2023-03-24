@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_header.css">
+    <link rel="stylesheet" href="style_home.css">
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+    <script src="script2.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #cart-items {
+            display: flex;
+            justify-content: left;
+            flex-wrap: wrap;
+        }
+        #cart-head{
+            text-align: center;
+            font-size: 5rem;
+        }
+
+        #cart-items .card {
+            width: 70rem;
+            padding: 15px;
+            border: 1px solid red;
+            /* padding-top: 20px; */
+
+            border-radius: .5rem;
+            text-align: center;
+            margin: auto;
+            /* margin-left: 13rem; */
+            display: flex;
+            justify-content: space-around;
+            /* margin: auto; */
+            flex-wrap: wrap;
+        }
+
+        #cart-items .card img {
+            width: 180px;
+            height: 160px;
+            align-items: center;
+            /* border: .2px solid; */
+        }
+
+        #cart-items .card h3 {
+            font-size: 1.5rem;
+            border: 0px solid;
+            height: 4.5rem;
+            width: 24rem;
+            margin-top: 28px;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+
+        #cart-items .card p {
+            font-size: 1.8rem;
+            border: 0px solid;
+        }
+        #cart-items .card #pric{
+            height: 35px;
+            width: 110px;
+            padding: 5px 4px;
+            margin-top:52px ;
+        }
+        #cart-items .card #quant{
+            height: 35px;
+            width: 160px;
+            padding: 5px 4px;
+            margin-top:50px ;
+        }
+
+        #cartf{
+            display: flex;
+            justify-content:space-evenly ;
+        }
+        #cartf a button{
+            border: -10px;
+            border-radius: .5rem;
+            background: none;
+            margin: 5px;
+            font-size: 3rem;
+            padding: .7rem 2rem;
+        }
+        #cartf a button:hover{
+            background-color: orange;
+            color: white;
+            cursor: pointer;
+        }
+        #cart-total {
+            text-align: center;
+            font-size: 3rem;
+            margin: 5px;
+            margin-top: 10px;
+            border: 4px solid black;
+            border-radius: .5rem;
+            background-color:khaki;
+            width: 45%;
+            position: relative;
+            /* bottom: 0px; */
+        }
+
+        section {
+            margin-top: 10rem;
+        }
+
+        #cart-items .card button {
+            height: 35px;
+            padding: 2px 7px;
+            /* padding: 10px; */
+            border-radius: 0.5rem;
+            background: none;
+            font-size: 25px;
+            margin-top: 55px;
+        }
+        #cart-items .card button:hover{
+            background-color: darkgoldenrod;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-shopping-basket"></i> Grocery </a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html#feature">Features</a>
+            <a href="products.html">Products</a>
+            <a href="#review">Reviews</a>
+            <a href="#aboutus">About Us</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <a href="cart.html"><div class="fas fa-shopping-cart" id="cart-btn"></div></a>
+            <div class="fas fa-user" id="login-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+
+        </div>
+        <form action="" class="search-form">
+            <input type="search" name="" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <form action="" class="login-form">
+            <h3>Login now</h3>
+            <input type="email" placeholder="Enter Email-id" class="box">
+            <input type="password" placeholder="Enter Password" class="box">
+            <p>Forget Password <a href="#">Click here</a></p>
+            <p>Don't have Account <a href="#">Sign Up</a></p>
+            <input type="submit" value="Login" class="btn">
+        </form>
+
+    </header>
+    
+    <div id="cart-head"style="height: 20px; margin-top: 6rem;"><h3>Your Cart</h3><a name="top"></a></div>
+    
+    <section>
+        <div id="cart-items"></div>
+        <br>
+        <div id="cartf">
+            <div id="cart-total"></div>
+            <a href="#_"><button>Pay now</button></a>
+        </div>
+        
+    </section>
+
+    <!-- Footer section start -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3> Grocery <i class="fa fa-shopping-basket"></i></h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis doloribus aut odit ad repellendus
+                    necessitatibus.</p>
+                <div class="share">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3> Contact Info</h3>
+                <a href="#" class="links"> <i class="fa fa-phone"></i>+919876542530</a>
+                <a href="#" class="links"> <i class="fa fa-phone"></i>+919876542531</a>
+                <a href="#" class="links"> <i class="fa fa-envelope"></i>grocery@gmail.com</a>
+                <a href="#" class="links"> <i class="fa fa-map-marker"></i>Gujarat , India</a>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="index.html" class="links"> <i class="fa fa-arrow-right"></i>Home</a>
+                <a href="index.html" class="links"> <i class="fa fa-arrow-right"></i>Features</a>
+                <a href="products.html" class="links"> <i class="fa fa-arrow-right"></i>Products</a>
+                <a href="#" class="links"> <i class="fa fa-arrow-right"></i>cart</a>
+                <a href="#" class="links"> <i class="fa fa-arrow-right"></i>Reviews</a>
+                <a href="#" class="links"> <i class="fa fa-arrow-right"></i>About Us</a>
+            </div>
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Subscribe For more update</p>
+                <input type="email" name="" id="" class="email" placeholder="Enter your Email..">
+                <div class="sub">
+                    <input type="submit" value="Subscribe" class="btn b1">
+                </div>
+
+            </div>
+        </div>
+        <div class="credit">Created By <span>Yash Prajapati</span> </div>
+    </section>
+
+    <!-- Footer section end -->
+    <script>
+        const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+        const cartItemsContainer = document.getElementById('cart-items');
+
+        function renderCart() {
+            cartItemsContainer.innerHTML = '';
+
+            cartItems.forEach(item => {
+                const card = document.createElement('div');
+                card.classList.add('card');
+
+                const image = document.createElement('img');
+                image.src = item.image;
+                image.alt = item.name;
+                card.appendChild(image);
+
+                const name = document.createElement('h3');
+                name.textContent = item.name;
+                card.appendChild(name);
+
+                const price = document.createElement('p');
+                price.setAttribute('id','pric');
+                price.textContent = '₹' + item.price.toFixed(2);
+                card.appendChild(price);
+
+                const quantity = document.createElement('p');
+                quantity.setAttribute('id','quant');
+                quantity.textContent = 'Quantity: ' + item.quantity;
+                card.appendChild(quantity);
+
+                const removeButton = document.createElement('button');
+                removeButton.classList.add('bt');
+                removeButton.textContent = 'Remove';
+                removeButton.addEventListener('click', () => {
+                    const index = cartItems.indexOf(item);
+                    if (index > -1) {
+                        cartItems.splice(index, 1);
+                        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+                        renderCart();
+                    }
+                });
+                card.appendChild(removeButton);
+
+                cartItemsContainer.appendChild(card);
+            });
+            const cartTotal = document.getElementById('cart-total');
+            const total = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+            cartTotal.textContent = 'Payable Amount : ₹' + total.toFixed(2);
+        }
+
+        renderCart();
+
+    </script>
+    <a href="#top"><img src="top.png" alt="back-to-top" id="top1"></a>
+</body>
+
+</html>

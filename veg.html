@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vegetable Products</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_header.css">
+    <link rel="stylesheet" href="style_home.css">
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+    <script src="script2.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-shopping-basket"></i> Grocery </a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html#feature">Features</a>
+            <a href="products.html">Products</a>
+            <a href="review1.html">Reviews</a>
+            <a href="about.html">About Us</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <a href="cart.html#cart-total">
+                <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            </a>
+            <div class="fas fa-user" id="login-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+        <form action="" class="search-form">
+            <input type="search" name="" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <form action="" class="login-form">
+            <h3>Login now</h3>
+            <input type="email" placeholder="Enter Email-id" class="box">
+            <input type="password" placeholder="Enter Password" class="box">
+            <p>Forget Password <a href="#">Click here</a></p>
+            <p>Don't have Account <a href="#">Sign Up</a></p>
+            <input type="submit" value="Login" class="btn">
+        </form>
+
+    </header>
+    <section class=" products" id="product">
+        <h2 id="veg">Vegetables</h2>
+        <div class="box-container">
+            <div class="box card" data-id="V101" data-name="Potato" data-price="35" data-image="veg/potato.png">
+                <img src="veg/potato.png" alt="" width="180px" height="130px">
+                <h1>Potato</h1>
+                <div class="price">35/- (per kg)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="V102" data-name="Onion" data-price="30" data-image="veg/onion.png">
+                <img src="veg/onion.png" alt="" width="180px" height="130px">
+                <h1>Onion</h1>
+                <div class="price">30/- (per kg)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="V103" data-name="Cauli Flower" data-price="40" data-image="veg/cauli.png">
+                <img src="veg/cauli.png" width="180px" height="130px" alt="">
+                <h1>Cauli Flower</h1>
+                <div class="price">40/- (per kg)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="V104" data-name="Beet" data-price="31" data-image="veg/beet.png">
+                <img src="veg/beet.png" alt="" width="180px" height="130px">
+                <h1>Beet</h1>
+                <div class="price">31/- (per kg)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="V105" data-name="Tomato" data-price="48" data-image="veg/tomato.png">
+                <img src="veg/tomato.png" alt="" width="180px" height="130px">
+                <h1>Tomato</h1>
+                <div class="price">48/- (per kg)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="V106" data-name="Cabbage" data-price="15" data-image="veg/cabbage.png">
+                <img src="veg/cabbage.png" alt="" width="180px" height="130px">
+                <h1>Cabbage</h1>
+                <div class="price">15/- (500 gm)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="V107" data-name="Carrot" data-price="25" data-image="veg/carrot.png">
+                <img src="veg/carrot.png" alt="" width="180px" height="130px">
+                <h1>Carrot</h1>
+                <div class="price">25/- (500 gm)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="V108" data-name="Green Chilli" data-price="57" data-image="veg/greenchilli.png">
+                <img src="veg/greenchilli.png" alt="" width="180px" height="130px">
+                <h1>Green Chilli</h1>
+                <div class="price">57/- (500 gm)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="V109" data-name="Lauki" data-price="35" data-image="veg/lauki.png">
+                <img src="veg/lauki.png" alt="" width="180px" height="130px">
+                <h1>Lauki</h1>
+                <div class="price">35/- (500 gm)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="V110" data-name="Radish" data-price="16" data-image="veg/radish.png">
+                <img src="veg/radish.png" alt="" width="180px" height="130px">
+                <h1>Radish</h1>
+                <div class="price">16/- (500 gm)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="V111" data-name="Brinjal" data-price="50" data-image="veg/brinjal.png">
+                <img src="veg/brinjal.png" alt="" width="180px" height="130px">
+                <h1>Brinjal</h1>
+                <div class="price">50/- (500 gm)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="V112" data-name="Corn" data-price="34" data-image="veg/corn.png">
+                <img src="veg/corn.png" alt="" width="180px" height="130px">
+                <h1>Corn</h1>
+                <div class="price">34/- (per piece)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="V113" data-name="Ginger" data-price="30" data-image="veg/ginger.png">
+                <img src="veg/ginger.png" alt="" width="180px" height="130px">
+                <h1>Ginger</h1>
+                <div class="price">30/- (250 gm)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="V114" data-name="Lady's fingers" data-price="50" data-image="veg/bhindi.png">
+                <img src="veg/bhindi.png" alt="" width="180px" height="130px">
+                <h1>Lady's fingers</h1>
+                <div class="price">50/- (500 gm)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+            <div class="box card" data-id="V11s5" data-name="Capsicum" data-price="30" data-image="veg/simla.png">
+                <img src="veg/simla.png" alt="" width="180px" height="130px">
+                <h1>Capsicum</h1>
+                <div class="price">30/- (250 gm)</div>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <button class="btn1">Add to cart</button>
+            </div>
+
+        </div>
+    </section>
+    <script src="cart.js"></script>
+       <!-- Footer section start -->
+       <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3> Grocery <i class="fa fa-shopping-basket"></i></h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis doloribus aut odit ad repellendus
+                    necessitatibus.</p>
+                <div class="share">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3> Contact Info</h3>
+                <a href="#" class="links"> <i class="fa fa-phone"></i>+919876542530</a>
+                <a href="#" class="links"> <i class="fa fa-phone"></i>+919876542531</a>
+                <a href="#" class="links"> <i class="fa fa-envelope"></i>grocery@gmail.com</a>
+                <a href="#" class="links"> <i class="fa fa-map-marker"></i>Gujarat , India</a>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="index.html" class="links"> <i class="fa fa-arrow-right"></i>Home</a>
+                <a href="index.html#feature" class="links"> <i class="fa fa-arrow-right"></i>Features</a>
+                <a href="products.html" class="links"> <i class="fa fa-arrow-right"></i>Products</a>
+                <a href="review1.html" class="links"> <i class="fa fa-arrow-right"></i>Reviews</a>
+                <a href="about.html" class="links"> <i class="fa fa-arrow-right"></i>About Us</a>
+            </div>
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Subscribe For more update</p>
+                <input type="email" name="" id="" class="email" placeholder="Enter your Email..">
+                <div class="sub">
+                    <input type="submit" value="Subscribe" class="btn3 b1">
+                </div>
+
+            </div>
+        </div>
+        <div class="credit">Created By <span>Yash Prajapati</span> </div>
+    </section>
+</body>

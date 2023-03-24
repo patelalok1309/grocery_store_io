@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>College Comparison Website</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: #00539C;
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #00539C;
+            color: #FFFFFF;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        footer {
+            background-color: #00539C;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>College Comparison Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#comparison">Comparison</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Welcome to our college comparison website! We've put together a list of top colleges in the country and
+                compared them based on various factors such as tuition, acceptance rate, and more. This website is meant
+                to provide students and their families with the information they need to make an informed decision about
+                where to attend college.</p>
+        </section>
+
+        <section id="comparison">
+            <h2>Comparison</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>College</th>
+                        <th>Tuition</th>
+                        <th>Acceptance Rate</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Harvard University</td>
+                        <td>$52,650</td>
+                        <td>4.6%</td>
+                        <td>Cambridge, MA</td>
+                    </tr>
+                    <tr>
+                        <td>Princeton University</td>
+                        <td>$53,890</td>
+                        <td>5.8%</td>
+                        <td>Princeton, NJ</td>
+                    </tr>
+                    <tr>
+                        <td>Massachusetts Institute of Technology (MIT)</td>
+                        <td>$53,790</td>
+                        <td>7.3%</td>
+                        <td>Cambridge, MA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a group of college students who understand how overwhelming the college application process can
+                be. That's why we created this website to help other students make an informed decision about where to
+                attend college. We hope you find this website helpful and informative!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 College Comparison Website</p>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

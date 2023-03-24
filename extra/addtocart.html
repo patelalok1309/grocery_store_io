@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <style>
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            width: 200px;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .add-to-cart-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cart-container {
+            margin-top: 50px;
+        }
+
+        .cart {
+            border: 1px solid black;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="products-container">
+        <div class="product">
+            <h2>Product Name 1</h2>
+            <p>Price: $10</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>Product Name 2</h2>
+            <p>Price: $20</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>Product Name 3</h2>
+            <p>Price: $30</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <h2>Cart</h2>
+        <div class="cart"></div>
+    </div>
+    <script>
+        // select all the add-to-cart buttons
+        const addToCartBtns = document.querySelectorAll('.add-to-cart-btn');
+
+        // add event listeners to the buttons
+        addToCartBtns.forEach(addToCartBtn => {
+            addToCartBtn.addEventListener('click', () => {
+                // get the product name and price
+                const productName = addToCartBtn.previousElementSibling.previousElementSibling.textContent;
+                const productPrice = addToCartBtn.previousElementSibling.textContent;
+
+                // create a new cart item
+                const cartItem = document.createElement('div');
+                cartItem.classList.add('cart-item');
+                cartItem.innerHTML = `
+      <h3>${productName}</h3>
+      <p>${productPrice}</p>
+    `;
+
+                // add the cart item to the cart
+                const cart = document.querySelector('.cart');
+                cart.appendChild(cartItem);
+            });
+        });
+
+    </script>
+</body>
+
+</html>
